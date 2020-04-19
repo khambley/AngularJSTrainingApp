@@ -6,16 +6,12 @@
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
     <script src="lib/angular/angular.js"></script>
     <script src="app.js"></script>
+    <script src="phone-list.component.js"></script>
   </head>
-  <body ng-controller="PhoneListController">
-
-    <ul>
-      <li ng-repeat="phone in phones">
-        <span>{{phone.name}}</span>
-        <p>{{phone.snippet}}</p>
-      </li>
-      <li>Total number of phones: {{phones.length}}</li>
-    </ul>
-    <p>Hello, {{name}}!</p>
+  <body>
+    <phone-list></phone-list>
+    <phone-list></phone-list>
+    <phone-list></phone-list>
+    
   </body>
 </html>
