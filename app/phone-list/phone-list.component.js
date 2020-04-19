@@ -9,7 +9,8 @@ angular.
                 self.orderProp = 'age';
 
                 $http.get('phones/phones.json').then(function(response){
-                    self.phones = response.data;
+                    self.phones = response.data.slice(0, 5);
+                    // Limits the display of phones to first 5 in list
                 })   
             }
         ]
